@@ -74,5 +74,11 @@ class TicTacToe
     full? == true && !won? == true
   end
 
+  def over?
+    if !won? == false || draw? == true
+      return true
+    end
+  end
+
 
 end

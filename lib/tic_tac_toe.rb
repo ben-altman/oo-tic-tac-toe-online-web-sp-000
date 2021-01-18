@@ -66,8 +66,10 @@ class TicTacToe
         return winner
       else
         false
+      end
     end
-    false
+
+    
   end
 
 

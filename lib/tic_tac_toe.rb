@@ -64,12 +64,11 @@ class TicTacToe
         winner.all? {|position| @board[position] == "X"} ||
         winner.all? {|position| @board[position] == "O"}
         return winner
-      else
-        false
       end
+      false
     end
 
-    
+
   end
 
 

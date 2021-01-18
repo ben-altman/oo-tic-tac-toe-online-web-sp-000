@@ -55,8 +55,12 @@ class TicTacToe
     move(index, current_player)
     display_board
   else
-    turn
+    turn                  #recursion: call a method from inside itself
   end
+
+
+
+
 end
 
 

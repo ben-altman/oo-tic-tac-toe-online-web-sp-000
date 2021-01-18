@@ -64,9 +64,8 @@ class TicTacToe
         winner.all? {|position| @board[position] == "O"}
       }
     end
-
-
   end
+
 
 
 end

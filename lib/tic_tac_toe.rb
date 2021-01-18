@@ -60,7 +60,7 @@ class TicTacToe
 
   def won?
     WIN_COMBINATIONS.each do |winner|
-      if 
+      if
         winner.all? {|position| @board[position] == "X"} ||
         winner.all? {|position| @board[position] == "O"}
         winner
@@ -68,7 +68,7 @@ class TicTacToe
         false
       end
     end
-  
+
   end
 
 

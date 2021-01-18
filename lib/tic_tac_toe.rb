@@ -59,13 +59,10 @@ class TicTacToe
   end
 
   def won?
-    WIN_COMBINATIONS.each do |winner|
-      if
+    WIN_COMBINATIONS.find {|winner|
         winner.all? {|position| @board[position] == "X"} ||
         winner.all? {|position| @board[position] == "O"}
-        return winner
-      end
-      false
+      }
     end
 
 

@@ -84,7 +84,7 @@ class TicTacToe
     elsif won?(board) != false
       return board[won?(board)[1]]
     end
-  end  
+  end
 
 
 end

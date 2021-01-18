@@ -79,7 +79,7 @@ class TicTacToe
   end
 
   def winner
-    if won?
+    if won?             #won? is truthy (returns an array), the return token
       @board[won?[1]]
     end
   end

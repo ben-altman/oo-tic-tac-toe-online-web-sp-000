@@ -82,7 +82,7 @@ class TicTacToe
     if draw? == true
       return nil
     elsif won? != false
-      return board[won?[1]]
+      return @board[won?[1]]
     end
   end
 

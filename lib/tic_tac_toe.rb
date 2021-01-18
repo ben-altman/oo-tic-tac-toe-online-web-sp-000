@@ -79,10 +79,8 @@ class TicTacToe
   end
 
   def winner
-    if draw? == true
-      return nil
-    elsif won? != false
-      return @board[won?[1]]
+    if won?
+      @board[won?[1]]
     end
   end
 

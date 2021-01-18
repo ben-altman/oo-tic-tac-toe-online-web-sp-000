@@ -58,6 +58,15 @@ class TicTacToe
     turn                  #recursion: call a method from inside itself
   end
 
+  def won?
+    WIN_COMBINATIONS.each do |winner|
+      if winner.all? {|position| @board[position] == "X"} ||
+      winner.all? {|position| @board[position] == "O"}
+      return winner
+      end
+    end
+    return false
+  end
 
 
 
